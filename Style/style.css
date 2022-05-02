@@ -60,6 +60,8 @@ header {
 }
 
 header .container {
+    align-items: center;
+    display: flex;
     justify-content: space-between;
   
     width: 90%;
@@ -94,22 +96,24 @@ header nav ul li a {
 }
 
 #home {
+    display: flex;
     background-color: rgba(88, 203, 211, 0.322);
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
-#home .container{
+#home .container{    
     display: flex;
-    
     width: 90%;
     max-width: 90rem;
     height: auto;
-
     margin: auto;
+    align-items: center;
 }
 
-#home img {    
-    width: 50rem;
+#home img {
+    display: flex;
+    width: 100%;
+    height: auto;
 }
 
 #home .dubai {
@@ -124,9 +128,9 @@ header nav ul li a {
 }
 
 #home .h1_btn {
-    margin-top: 4rem;
     font-size: 0.8rem;
     text-align: center;
+    align-items: center;
 }
 
 #home .btn {
