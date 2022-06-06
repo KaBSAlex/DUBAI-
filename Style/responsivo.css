@@ -1,3 +1,5 @@
+
+
 @media(max-width: 1400px) {
     #home .btn {
         margin: 12rem 4rem 0 0 ;
@@ -24,6 +26,16 @@
 @media(max-width: 980px) {
     html {
         font-size: 70%;
+    }
+
+    #home, 
+    #about .container,
+    #services .container,
+    #testimonials .container,
+    #contact .container,
+    #about .container,
+    #footer .container {
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 18px -22px;
     }
 
     #about .first_section {
@@ -76,9 +88,12 @@
         width: 45%;
     }
 
+    #testimonials .partners {
+        flex-direction: column;
+    }
+
     #testimonials .logo {
-        width: 15%;
-        height: auto;
+        margin: 2rem 0;
     }
 
 }
@@ -142,7 +157,7 @@
         left: 0;
         
         width: 100vw;
-        height: 100vh;
+        height: 50vh;
 
         background-color: rgb(111, 214, 214);
 
@@ -186,6 +201,7 @@
         font-size: 3rem;
         line-height: 4rem;
     }
+
 }
 
 @media (max-width: 350px) {

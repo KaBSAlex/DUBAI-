@@ -14,7 +14,7 @@ html {
 }
 
 body {
-    background-image: url(../img/Background/wood.bg.jpg);
+    
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -149,7 +149,6 @@ header nav ul li a {
 }
 
 #home .btn:hover {
-    padding: 1.4rem 2.4rem;
     transition: 0.8s;
     background-color: rgba(173, 232, 236, 0.466);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -310,15 +309,15 @@ header nav ul li a {
 #testimonials .partners {
     display: flex;
     text-align: center;
-    height: 200px;
+    justify-content: space-between;
+    padding: 2rem;
     align-items: center;
-    justify-content: center;
     background-color: rgba(88, 203, 211, 0.466);
 }
 
-#testimonials .logo {
-    height: 100px;
-    margin: 3rem;
+#testimonials img {
+    width: 10rem;
+    height: auto;
 }
 
 #contact .container {
@@ -410,10 +409,9 @@ header nav ul li a {
 }
 
 footer {
+    align-items: center;
     width: 100%;
-    height: 150px;
-    top: 0;
-    left: 0;
+    height: 10rem;
     padding: 2rem;
 
     background-color: rgba(88, 203, 211, 0.849);
@@ -421,12 +419,18 @@ footer {
 }
 
 footer .container {
+    align-items: center;
     display: flex;
     width: 90%;
     max-width: 90rem;
     justify-content: space-between;
 
     margin: auto;
+}
+
+footer .icons {
+    display: flex;
+    flex-direction: row;
 }
 
 footer .icons img {
@@ -437,3 +441,6 @@ footer h3 {
     text-align: center;
 }
 
+.map p {
+    margin: 2rem 0;
+}

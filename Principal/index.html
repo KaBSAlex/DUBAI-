@@ -10,15 +10,10 @@
     <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="../Style/responsivo.css">
     <link rel="shortcut icon" href="../img/Logo/icon.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-
-    <div class="arrow">
-        <a href="#home">
-            <img src="../icon/arrow-up2.png" alt="Seta para inicio">
-        </a>
-    </div>
 
     <header id="header">
         <div class="container">
@@ -48,13 +43,18 @@
         <section id="home">
             <div class="container">
                 <div>
-                    <img src="../img/sections/Image_contrato_lado_esquerdo estilizado.png" alt="Um homem escrevendo em uma folha">
+                    <img src="../img/sections/Image_contrato_lado_esquerdo estilizado.png"
+                        alt="Um homem escrevendo em uma folha">
                 </div>
                 <div class="h1_btn">
-                    <h1><span class="dubai">DUBAI</span><br>SERVIÇOS TERCEIRIZADOS</h1>
-                    <a href="#contact">
-                        <button class="btn">Contate</button>
-                    </a>
+                    <div>
+                        <h1><span class="dubai">DUBAI</span><br>SERVIÇOS TERCEIRIZADOS</h1>
+                    </div>
+                    <div>
+                        <a href="#contact">
+                            <button class="btn">Contate</button>
+                        </a>
+                    </div>
                 </div>
                 <div>
                     <img src="../img/sections/Image_contrato_lado_direito estilizado.png" alt="Condominio">
@@ -100,10 +100,8 @@
                 <div class="card">
                     <h2>VALORES</h2>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ratione consequuntur ea
-                        magnam commodi
-                        quis odio quae accusantium unde quas, eos deserunt harum omnis rerum. Voluptatem et iure ad
-                        excepturi.
+                        Prezamos o serviços que oferecemos a nossos clientes, estamos preparados para resolver 
+                        diversos problemas da melhor maneira possivel, com empatia e segurança
                     </p>
                 </div>
             </div>
@@ -114,13 +112,14 @@
                 <h1>Serviços</h1>
                 <div class="img_services">
                     <div class="img_gater bottom">
-                        <img class="img_venom" src="../img/Services/container_portaria.png" alt="">
+                        <img class="img_venom" src="../img/Services/container_portaria.png"
+                            alt="Conceitos sobre segurança">
                     </div>
                     <div class="img_clear bottom text_right">
-                        <img src="../img/Services/CONTAINER_LIMPEZA.png" alt="">
+                        <img src="../img/Services/CONTAINER_LIMPEZA.png" alt="Conceitos sobre limpeza">
                     </div>
                     <div class="img_garden bottom">
-                        <img class="img_venom" src="../img/Services/container_garden.png" alt="">
+                        <img class="img_venom" src="../img/Services/Group 5.png" alt="Conceitos sobre">
                     </div>
                 </div>
 
@@ -132,10 +131,10 @@
                         <img src="../img/Services/grupo limpeza toggle.png" alt="">
                     </div>
                     <div class="img_toggle bottom">
-                        <img src="../img/Services/grupo garden toggle.png" alt="">
+                        <img src="../img/Services/Group 2.png" alt="">
                     </div>
                 </div>
-                
+
             </div>
         </section>
 
@@ -143,9 +142,15 @@
             <div class="container">
                 <h1>Nossos clientes</h1>
                 <div class="partners">
-                    <img class="logo" src="../img/partners/logo_tilicon.png" alt="brasao da Tilicon">
-                    <img class="logo" src="../img/partners/brasao_gesp_v_cor.png" alt="brasao do GOV">
-                    <img class="logo" src="../img/partners/oneprime.jpg" alt="brasao do condominio One Prime">
+                    <div>
+                        <img class="logo" src="../img/partners/logo_tilicon.png" alt="brasao da Tilicon">
+                    </div>
+                    <div>
+                        <img class="logo" src="../img/partners/brasao_gesp_v_cor.png" alt="brasao do GOV">
+                    </div>
+                    <div>
+                        <img class="logo" src="../img/partners/oneprime.jpg" alt="brasao do condominio One Prime">
+                    </div>
                 </div>
                 <div></div>
             </div>
@@ -160,19 +165,20 @@
                         não perca tempo. Fale com a Dubai hoje mesmo.
                     </p>
 
-                    <form action="">
+                    <form id="Form_contact" method="post" action="https://formspree.io/f/mpzbnwor">
                         <div class="input_group">
-                            <input placeholder="Nome" type="text" required>
-                            <input placeholder="Email" type="email" required>
-                            <input placeholder="Telefone (com DDD)" type="text" required>
+                            <input type="hidden" name="Subject" value="Entrar em contato - DUBAI">
+                            <input placeholder="Nome" name="nome" type="text" required>
+                            <input placeholder="Email" name="email" type="email" required>
+                            <input  id="phone" placeholder="(00) 00000-0000" maxlength="15" name="phone" type="text" required>
                         </div>
                         <div class="text_area">
-                            <textarea placeholder="Se preferir, deixa uma mensagem aqui" name="" id="" cols="30"
+                            <textarea placeholder="Se preferir, deixa uma mensagem aqui" name="Mensagem" cols="30"
                                 rows="10"></textarea>
                         </div>
 
                         <div class="btn_align">
-                            <button class="btn_form" type="submit">Enviar</button>
+                            <button id="send" class="btn_form" type="submit" value="click">Enviar</button>
                         </div>
                     </form>
 
@@ -181,7 +187,7 @@
                 <div class="map">
                     <div class="icon_flex">
                         <img src="../icon/location2.png" alt="">
-                        <p>
+                        <p class="">
                             Av. Dr. Eduardo Cotching, 2517 - ANÁLIA FRANCO, São Paulo - SP, Brasil
                         </p>
                     </div>
@@ -197,25 +203,24 @@
     <footer>
         <div class="container">
             <div>
-                <a href="#">
+                <a href="#home">
                     <img class="logo" src="../img/Logo/icon.png" alt="logo">
                 </a>
             </div>
             <div class="icons">
-                <a href="#">
-                    <img src="../icon/mail4.png" alt="">
+                <a href="https://contate.me/Dubai-Serviços" target="_blank">
+                    <img src="../icon/whatsapp.png" alt="icone de whatsapp">
                 </a>
                 <a href="#">
-                    <img src="../icon/whatsapp.png" alt="">
-                </a>
-                <a href="#">
-                    <img src="../icon/instagram.png" alt="">
+                    <img src="../icon/instagram.png" alt="icone de instagram">
                 </a>
             </div>
         </div>
         <h3>Development by KaBSAlex</h3>
     </footer>
     <script src="../Script/toggle.js"></script>
+    <script src="../Script/inputValidation.js" defer></script>
+    <script src="../Script/scroll.js"></script>
 </body>
 
 </html>
