@@ -251,7 +251,7 @@ header nav ul li a {
 }
 
 #services .img_clear {
-    background-image: url(/img/Services/clear_services.png);
+    background-image: url(../img/Services/clear_services.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: auto;
